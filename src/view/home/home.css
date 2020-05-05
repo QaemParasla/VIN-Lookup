@@ -1,0 +1,26 @@
+.landing-page-image {
+  /* The image used */
+  background-image: url("../../assets/landingPage.jpg");
+
+  /* Height */
+  min-height: 450px;
+
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-page-image-dark-overlay {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  min-height: 450px;
+}
+
+#hero-content .jumbotron {
+  position: relative;
+  background-color: #fff;
+  padding: 35px 15px 15px 15px; /*Top Right Bottom Left*/
+  top: 50%;
+}
