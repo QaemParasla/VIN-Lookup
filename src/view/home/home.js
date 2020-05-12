@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { VinSearchBar } from "../../components/vinSearchBar";
 import "./home.css";
 
 function Home() {
-  const [vin, setVIN] = useState("");
-
   return (
     <>
       <div className="landing-page-image">
@@ -18,30 +16,7 @@ function Home() {
           <form action="dashboard" method="GET">
             <div className="jumbotron container">
               <div className="container-fluid">
-                <div className="form-row">
-                  <div className="form-group col-md-8">
-                    <input
-                      value={vin}
-                      type="text"
-                      className="form-control form-control-lg"
-                      id="licence-plate"
-                      name="licence-plate"
-                      placeholder="Enter VIN"
-                      onChange={(e) => setVIN(e.target.value)}
-                    />
-                  </div>
-
-                  <div className="col-md-4">
-                    <Link to={`/dashboard/${vin}`}>
-                      <button
-                        type="button"
-                        className="btn btn-success btn-block"
-                      >
-                        Search
-                      </button>
-                    </Link>
-                  </div>
-                </div>
+                <VinSearchBar />
                 <div className="row">
                   <div className="col-md-3">
                     <i className="fa fa-lock">
