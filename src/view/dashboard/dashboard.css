@@ -1,0 +1,27 @@
+.report-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.report-grid {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.report-grid-success {
+  color: white;
+  background-color: #005a9e;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+}
+
+.report-grid-data {
+  color: black;
+  background-color: lightgrey;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 2px solid lightslategray;
+}
